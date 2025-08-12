@@ -1,0 +1,44 @@
+{
+  "name": "ai-notification-system",
+  "version": "2.0.0",
+  "description": "AI-managed universal notification system for GitHub Actions",
+  "main": "api/notify.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "vercel build",
+    "deploy": "vercel",
+    "test": "node --test",
+    "health-check": "node cli/health-check.js",
+    "generate-config": "node cli/generate-config.js",
+    "optimize": "node cli/optimize.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.24.3",
+    "jsonwebtoken": "^9.0.2",
+    "node-cron": "^3.0.3",
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@vercel/node": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shimajima-eiji/github-actions-notifications"
+  },
+  "keywords": [
+    "github-actions",
+    "notifications",
+    "ai",
+    "slack",
+    "discord",
+    "line",
+    "ci-cd",
+    "automation"
+  ],
+  "author": "shimajima-eiji",
+  "license": "MIT"
+}
