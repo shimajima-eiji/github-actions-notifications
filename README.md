@@ -27,7 +27,7 @@ jobs:
       # 成功通知
       - name: Notify success
         if: success()
-        uses: shimajima-eiji/github-actions-notifications/.github/workflows/notify.yml@main
+        uses: your-username/github-actions-notifications/.github/workflows/notify.yml@main
         with:
           status: "success"
           message: "Build completed successfully"
@@ -40,7 +40,7 @@ jobs:
       # エラー通知
       - name: Notify error
         if: failure()
-        uses: shimajima-eiji/github-actions-notifications/.github/workflows/notify.yml@main
+        uses: your-username/github-actions-notifications/.github/workflows/notify.yml@main
         with:
           status: "error"
           message: "Build failed"
@@ -53,7 +53,7 @@ jobs:
 
 ```yaml
       - name: Notify with full context
-        uses: shimajima-eiji/github-actions-notifications/.github/workflows/notify.yml@main
+        uses: your-username/github-actions-notifications/.github/workflows/notify.yml@main
         with:
           status: "success"
           title: "Deployment Complete"
@@ -114,7 +114,7 @@ jobs:
 🌿 Branch: main
 🎯 Target: production environment
 🕐 Time: 2025-08-12 13:00:00 UTC
-👤 Actor: shimajima-eiji
+👤 Actor: github-user
 
 All tests passed and deployment is ready
 ```
